@@ -1,0 +1,2 @@
+ANOVA , CHI SQUARE , T TEST to be done in R 
+Prac 4 , Practical 5 
