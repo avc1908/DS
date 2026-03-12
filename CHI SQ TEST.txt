@@ -1,0 +1,4 @@
+aptitude<-c(20,40,50,60)
+job_score<-c(40,70,78,20)
+table_data<-table(aptitude,job_score)
+chisq.test(table_data)

@@ -1,0 +1,2 @@
+mistime2<-read.csv(file.choose(),header=T)
+t.test(mistime2$time_g1,mistime2$time_g2,alternative="two.sided",var.equal=TRUE)

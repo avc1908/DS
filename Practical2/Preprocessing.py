@@ -20,12 +20,8 @@ data.drop_duplicates(inplace=True)
 print(data.shape)
 
 def describe(data):
-    format = "%-30s %-10s %6s %6s %s"
-    print(format % ("Column Name", "Data Type", "Null", "Unique", "Unique"))
-    print(format % ("", "", "Count", "Count", "Values"))
-    print('-' * 65)
     for col in data.columns:
-        print(format % (col, data[col].dtype, data[col].isnull().sum(),
+        print((col, data[col].dtype, data[col].isnull().sum(),
                         data[col].nunique(), data[col].unique()))
 print(describe(data))
 
@@ -41,7 +37,6 @@ print(data)
 
 
 # EDA
-sns.set(style='darkgrid')
 sns.countplot(data, x='skin_rash')
 def count_plot(data):
     for col in data.columns:

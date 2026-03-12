@@ -1,0 +1,2 @@
+mistime3<-read.csv(file.choose(),header=T)
+t.test(mistime3$time_g1,mistime3$time_g2,alternative="greater",paired=TRUE)

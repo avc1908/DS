@@ -1,0 +1,3 @@
+setlevel<-read.csv(file.choose(),header=T)
+anovatable<-aov(formula=setindex~dept,data=setlevel)
+summary(anovatable)

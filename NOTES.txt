@@ -1,0 +1,6 @@
+mistime -> one sample t test ,only performed on one column example mistime$time ,alternative = greater , mu = 90  
+mistime2 -> independent sample t test , performed on two columns  example : mistime2$time_g1 , mistime2$time_g2 ,alternative = "two.sided" , var.equal = TRUE  
+mistime3-> paired sample t test , performed on two columns example : mistime3$time_g1 , mistime3$time_g2 , alternative = " greater" , paired= TRUE
+
+
+
